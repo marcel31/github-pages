@@ -1,0 +1,229 @@
+/* src/styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.app {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80vw;
+    padding: 2em;
+    margin: 1em;
+    position: relative; /* Agregado */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #007bff; /* Cambiado a azul */
+}
+
+.listas-container {
+    display: flex;
+    flex-wrap: wrap; /* Agregado para que los elementos se envuelvan en una nueva línea */
+    justify-content: space-between; /* Agregado para que las columnas estén espaciadas uniformemente */
+    gap: 20px;
+}
+
+.lista {
+    flex: 1; /* Agregado para que las columnas tengan igual ancho */
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.lista h2,
+.lista h3 {
+    margin-bottom: 10px;
+    color: #007bff; /* Cambiado a azul */
+}
+
+.comodin-list {
+    margin-top: 20px;
+}
+
+.comodin-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    gap: 10px;
+}
+
+.comodin-usado-list {
+    margin-top: 20px;
+}
+
+.comodin-usado-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.comodin-usado-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.comodin-usado-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.comodin-usado-motivo,
+.comodin-usado-date {
+    color: #666;
+    font-size: 1rem;
+}
+
+.comodin-item input {
+    width: 100%;
+}
+
+.comodin-item>div:first-child {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff; /* Cambiado a azul */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Agregada transición */
+}
+
+button:hover {
+    background-color: #0056b3; /* Cambiado a azul oscuro */
+}
+
+/* Agregado */
+.logout-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.logout-button button {
+    padding: 8px 16px;
+    font-size: 1rem;
+    background-color: #dc3545; /* Cambiado a rojo */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Agregada transición */
+}
+
+.logout-button button:hover {
+    background-color: #c82333; /* Cambiado a rojo oscuro */
+}
+
+/* Popup */
+.form-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    z-index: 999;
+}
+
+.form-popup label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-popup input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-popup button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.form-popup button[type="submit"] {
+    margin-right: 10px;
+}
+
+.form-popup button:hover {
+    background-color: #0056b3;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+}
+
+.login input {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff; /* Cambiado a azul */
+    color: #fff;
+    transition: background-color 0.3s; /* Agregada transición */
+}
+
+.login button:hover {
+    background-color: #0056b3; /* Cambiado a azul oscuro */
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
